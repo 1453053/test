@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BOLYBI</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/icon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/flexslider.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./css_member/cart.css">
+    <link rel="stylesheet" type="text/css" href="./css_member/info.css">
+  </head>
+  <body>
+    <div class="home">
+      <header class="header fixed">
+        <div class="header-wrapper top-bar">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-2 col-sm-3">
+                <div class="menu-icon pull-left">
+                  <a onclick="showMenu()">
+                    <i class="material-icons">menu</i>
+                    <span class="hidden-xs">Menu</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-xs-8 col-sm-6">
+                <div class="header-logo text-center">
+                  <a to="/" class="logo-text"  href="index_member.html">BOLYBI</a>
+                </div>
+              </div>
+              <div class="col-xs-2 col-sm-3">
+                <div class="header-cart pull-right">
+                  <div class="cart-wrapper">
+                    <a class="hidden-xs" href="cart_member.html" >
+                      <span class="hidden-xs hidden-sm cart">$0.00</span>
+                      <span class="hidden-xs hidden-sm">Cart</span>
+                    </a>
+                      
+                    <div class="dropdown">
+                      <button id="myinfo" class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                        <a class="header-nav-link name tooltipped tooltipped-sw js-menu-target">
+                          <img alt="avatar" class="img-circle" src="./images/ly.jpg" height="40" width="40">
+                          <span class="caret"></span>
+                        </a>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" style="margin-right: 30px;">
+                        <li>
+                          <a href="cart_member.html">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+                          </a>
+                        </li>
+                        <li> 
+                          <a href="checkout_member.html">
+                            <i class="fa fa-credit-card" aria-hidden="true"></i> Check Out
+                          </a>
+                        </li>
+                        <li>
+                          <a href="profile_member.html">
+                            <i class="fa fa-user" aria-hidden="true"></i> My profile
+                          </a>
+                        </li>
+                        <li>
+                          <a href="index.html">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i> Log Out
+                          </a>
+                        </li>
+                      </ul>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="my-cart">
+        <div class="container">
+          <div class="row">
+          <div class="col-md-12">
+            <h2 class="block-header" style="font-weight: normal; position: relative; top: -30px;">Check Out</h2>
+          </div>
+          <div class="col-md-6">
+            <div class="wrapper-cart">
+              <div class="remove-product">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </div>
+              <div class="image-product">
+                <img alt="" class="imgdetail max-height" id="mainImg" src="http://shop.picassostudio.io/assets/img/STEFAN-JANOSKI-MAX-PRM-807497_101_A_PREM_1.png"/>
+              </div>
+              <h4>Stephan janoski max</h4>
+              <div class="size">Size 7</div>
+              <div class="amount">
+                <span class="counter" ><i class="fa fa-minus"></i></span>
+                <span class="input ng-binding" >1</span>
+                <span class="counter" ><i class="fa fa-plus"></i></span>
+              </div>
+              <div class="subtotal">$150.00</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="wrapper-cart">
+              <div class="remove-product">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </div>
+              <div class="image-product">
+                <img alt="" class="imgdetail max-height" id="mainImg" src="http://shop.picassostudio.io/assets/img/INTERNATIONALIST-KJCRD-M-QS-829344_006_A_PREM_1.png"/>
+              </div>
+              <h4>Inter Nationalist kjcrd</h4>
+              <div class="size">Size 8</div>
+              <div class="amount">
+                <span class="counter"><i class="fa fa-minus"></i></span>
+                <span class="input ng-binding">1</span>
+                <span class="counter"><i class="fa fa-plus"></i></span>
+              </div>
+              <div class="subtotal">$40.00</div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="shopping-cart">
+              <div class="row">
+                <div class="btn-group btn-group-justified">
+                  <a href="shop_member.html" class="btn btn-basic">Back Store</a>
+                  <a href="#" class="btn btn-default">
+                    <p>Total:
+                      <p id="price">$190.00</p>
+                    </p>
+                  </a>
+                  <a href="checkout_member.html" class="btn btn-basic">Check out</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-menu">
+        <div class="close-menu" onclick="hideMenu()">
+          <i class="material-icons">close</i>
+        </div>
+        <ul>
+          <li><a class="active" href="index_member.html">Home</a></li>
+          <li><a href="shop_member.html">Shop</a></li>
+          <li><a href="about_member.html">About</a></li>
+          <li><a href="contact_member.html">Contact</a></li>
+        </ul>
+        <div class="social-media">
+          <a target="_blank" href="https://www.facebook.com/BOLYBIshop/">
+            <span><i class="fa fa-facebook"></i></span>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/bolybi.shoes/">
+            <span><i class="fa fa-instagram"></i></span>
+          </a>
+          <a target="_blank" href="https://plus.google.com/100006312170457538105">
+            <span><i class="fa fa-google-plus"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./js/flexslider.js"></script>
+    <script src="./js/menu.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.flexslider').flexslider({
+           animation: "slide"
+        });
+      })
+    </script>
+  </body>
+</html>

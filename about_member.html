@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BOLYBI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/flexslider.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./css_member/info.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/icon.jpg" />
+  </head>
+  <body>
+    <div class="home">
+      <header class="header fixed">
+        <div class="header-wrapper top-bar">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-2 col-sm-3">
+                <div class="menu-icon pull-left">
+                  <a onclick="showMenu()">
+                    <i class="material-icons">menu</i>
+                    <span class="hidden-xs">Menu</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-xs-8 col-sm-6">
+                <div class="header-logo text-center">
+                  <a href="index_member.html" to="/" class="logo-text">BOLYBI</a>
+                </div>
+              </div>
+              <div class="col-xs-2 col-sm-3">
+                <div class="header-cart pull-right">
+                  <div class="cart-wrapper">
+                    <a class="hidden-xs" href="cart_member.html">
+                      <span class="hidden-xs cart">$0.00</span>
+                      <span class="hidden-xs">Cart</span>
+                    </a>
+                    <div class="dropdown">
+                      <button id="myinfo" class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                        <a class="header-nav-link name tooltipped tooltipped-sw js-menu-target">
+                          <img alt="avatar" class="img-circle" src="./images/ly.jpg" height="40" width="40">
+                          <span class="caret"></span>
+                        </a>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" style="margin-right: 30px;">
+                        <li>
+                          <a href="cart_member.html">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+                          </a>
+                        </li>
+                        <li> 
+                          <a href="checkout_member.html">
+                            <i class="fa fa-credit-card" aria-hidden="true"></i> Check Out
+                          </a>
+                        </li>
+                        <li>
+                          <a href="profile_member.html">
+                            <i class="fa fa-user" aria-hidden="true"></i> My profile
+                          </a>
+                        </li>
+                        <li>
+                          <a href="index.html">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i> Log Out
+                          </a>
+                        </li>
+                      </ul>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="content-area">
+        <section class="page-section height-100">
+          <div class="container-fluid full-height">
+            <div class="col-md-12 relative min-height">
+              <div class="wrapper-vertical-center">
+                <div class="text-center about-header">
+                  <h2 class="block-header">About us</h2>
+                  <div class="social-media">
+                    <a target="_blank" href="https://www.facebook.com/BOLYBIshop/">
+                      <span><i class="fa fa-facebook"></i></span>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/bolybi.shoes/">
+                      <span><i class="fa fa-instagram"></i></span>
+                    </a>
+                    <a target="_blank" href="https://plus.google.com/100006312170457538105">
+                      <span><i class="fa fa-google-plus"></i></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="regular-text" style="padding-bottom: 50px; border-bottom: 1px dashed #ccc;">
+                  Since 2015 <br>
+                  BOLYBI always give you the best sneakers. Slogan of BOLYBI is: "<span style="font-weight:700">Wherever you go, I will go with you</span>". So BOLYBI hope when you come to me you will feel happy and satisfied. Thank you very much!!
+                </div>
+                <p style="text-align: center; font-size: 34px; text-transform: uppercase;">Service</p>
+                <!--Service-icon-->
+                  <div class="service-icon">
+                      <div class="col-sm-4 col-xs-12">
+                          <div class="fc-icon">
+                              <a href="#">
+                                  <i class="fa fa-clock-o" aria-hidden="true"></i>
+                              </a>
+                          </div>
+                          <div>
+                              <h2 class="shipping-title">
+                              <a href="#">OPEN</a>
+                          </h2>
+                          <p class="info">8:30 AM - 22:00 PM</p>
+                          </div>
+                      </div>
+
+                      <div class="col-sm-4 col-xs-12">
+                          <div class="fc-icon">
+                              <a href="#">
+                                  <i class="fa fa-repeat" aria-hidden="true"></i>
+                              </a>
+                          </div>
+                          <h2 class="shipping-title">
+                              <a href="#">FREE EXCHANGE</a>
+                          </h2>
+                          <p class="info">30 days return on items</p>
+                      </div>
+                      <div class="col-sm-4 col-xs-12">
+                          <div class="fc-icon">
+                              <a href="#">
+                                  <i class="fa fa-bicycle" aria-hidden="true"></i>
+                              </a>
+                          </div>
+                          <h2 class="shipping-title">
+                              <a href="#">SHIPPING</a>
+                          </h2>
+                          <p class="info">Shipping on all VN order</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+      <div class="main-menu">
+        <div class="close-menu" onclick="hideMenu()">
+          <i class="material-icons">close</i>
+        </div>
+        <ul>
+          <li><a href="index_member.html">Home</a></li>
+          <li><a href="shop_member.html">Shop</a></li>
+          <li><a href="about_member.html" class="active">About</a></li>
+          <li><a href="contact_member.html">Contact</a></li>
+        </ul>
+        <div class="social-media">
+          <a target="_blank" href="https://www.facebook.com/BOLYBIshop/">
+            <span><i class="fa fa-facebook"></i></span>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/bolybi.shoes/">
+            <span><i class="fa fa-instagram"></i></span>
+          </a>
+          <a target="_blank" href="https://plus.google.com/100006312170457538105">
+            <span><i class="fa fa-google-plus"></i></span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

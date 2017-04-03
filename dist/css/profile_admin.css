@@ -1,0 +1,26 @@
+.imgView {
+    width: 300px;
+    height: 300px;
+    
+}
+
+.content {
+    font-size: 20px;
+}
+
+.account_box{
+	position: relative;
+	box-sizing: border-box;
+	display: block;
+}
+
+.label_{
+	min-width: 30%;
+	float: left;
+    font-weight: bold;
+}
+
+.detail_{
+    display: inline-block;
+    width: 70%;
+}

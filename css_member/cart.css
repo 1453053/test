@@ -1,0 +1,126 @@
+.my-cart{
+  background-color: #f5f5f5;
+  font-family: Oswald;
+}
+
+.my-cart h2{
+  margin-top: 160px;
+  text-align: center;
+  margin-bottom: 50px;
+  /*font-size: 50px;*/
+  font-weight: 700;
+}
+.image-product img{
+  width: 100%;
+}
+.wrapper-cart{
+    width: 50%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    position: relative;
+    box-shadow: 0 0 5px #999;
+    background-color: white;
+}
+.remove-product{
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 24px;
+  color: #999;
+}
+.wrapper-cart h4 {
+    font-size: 24px;
+    color: #15171f;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 30px;
+    text-align: center;
+}
+.price {
+    font-size: 18px;
+    color: #9E9D9D;
+    text-align: center;
+}
+.counter {
+    color: #C1C1C1;
+    cursor: pointer;
+}
+.input {
+    background: transparent;
+    text-align: center;
+    border: none;
+    font-size: 24px;
+    display: inline-block;
+    margin: 0 40px;
+}
+.subtotal {
+    font-size: 30px;
+    color: #fa5b2f;
+    font-weight: bolder;
+    text-align: center;
+}
+.shopping-cart{
+  margin-bottom: 100px;
+  margin-top: 50px;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+.btn-cart{
+  background-color: #15171f;
+    border: 3px solid #15171f;
+    padding: 1em 7em;
+    font-weight: 600;
+    line-height: 1;
+    transition: 0.2s;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white !important;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+a.btn-cart:hover{
+  text-decoration: none;
+  background-color: white;
+  color: black !important;
+}
+.shopping-cart h3{
+  text-align: center;
+  display: inline;
+  font-size: 35px;
+  margin-right: 20px;
+}
+.shopping-cart span{
+  font-size: 30px;
+  color: #fa5b2f;
+  font-weight: bolder;
+}
+.btn-group-justified{
+  background-color: #15171f;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.size{
+  font-size: 18px;
+  color: #9E9D9D;
+  text-align: center;
+}
+.btn-basic{
+  color: #ffffff;
+}
+.image-product{
+  text-align: center;
+}
+.btn-group-justified .btn-basic{
+  font-size: 18px;
+}
+.btn-group-justified .btn-basic:hover{
+  color: #ffffff;
+  background-color: #fa5b2f;
+}
+.amount{
+  text-align: center;
+  margin: 40px 0px;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BOLYBI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/flexslider.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/icon.jpg" />
+  </head>
+  <body>
+    <div class="home">
+
+      <header class="header fixed">
+        <div class="header-wrapper top-bar">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-2 col-sm-3">
+                <div class="menu-icon pull-left">
+                  <a onclick="showMenu()">
+                    <i class="material-icons">menu</i>
+                    <span class="hidden-xs">Menu</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-xs-8 col-sm-6">
+                <div class="header-logo text-center">
+                  <a href="index.html" to="/" class="logo-text">BOLYBI</a>
+                </div>
+              </div>
+              <div class="col-xs-2 col-sm-3">
+                <div class="header-cart pull-right">
+                  <div class="cart-wrapper">
+                    <a class="hidden-xs">
+                      <span class="hidden-xs cart">$0.00</span>
+                      <span class="hidden-xs">Cart</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="content-area">
+        <section class="page-section full-height">
+          <div class="container-fluid full-height">
+            <div class="col-md-12 full-height relative">
+              <div class="wrapper-vertical-center max-width-600">
+                <div class="text-center login-header">
+                  <h2 class="block-header">Register</h2>
+                </div>
+                <form class="contact-form " id="contact-form">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="email" placeholder="Email" ref="email" name="email" class="form-control" tabIndex="1" required="true"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="password" name="password" ref="password" class="form-control " placeholder="Password" maxLength="30" size="30" required="true" tabIndex="2"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="password" name="repassword" ref="repassword" class="form-control " tabIndex="3" placeholder="Retype Password" maxLength="30" size="30" required="true"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="text" name="name" class="form-control" ref="name" placeholder="Name" maxLength="30" size="30" required="true" tabIndex="4"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input ref="avatar" type="file" name="avatar" class="form-control"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row text-center">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <img src="images/icon.jpg" alt='avatar'/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 col-xs-12 text-center">
+                      <button type="submit" class="btn-theme form-btn col-md-12">
+                        Register
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="main-menu">
+        <div class="close-menu" onclick="hideMenu()">
+          <i class="material-icons">close</i>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="submenu hidden-xs">
+          <li><a href="login.html">Log in</a></li>
+          <li><a class="active" href="register.html">Register</a></li>
+        </ul>
+        <div class="social-media">
+          <a target="_blank" href="https://www.facebook.com/BOLYBIshop/">
+            <span><i class="fa fa-facebook"></i></span>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/bolybi.shoes/">
+            <span><i class="fa fa-instagram"></i></span>
+          </a>
+          <a target="_blank" href="https://plus.google.com/100006312170457538105">
+            <span><i class="fa fa-google-plus"></i></span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./js/menu.js"></script>
+
+  </body>
+</html>

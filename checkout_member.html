@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BOLYBI</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/icon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/flexslider.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./css_member/info.css">
+    <link rel="stylesheet" type="text/css" href="./css_member/checkout.css">
+  </head>
+  <body>
+    <div class="home">
+      <header class="header fixed">
+        <div class="header-wrapper top-bar">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-2 col-sm-3">
+                <div class="menu-icon pull-left">
+                  <a onclick="showMenu()">
+                    <i class="material-icons">menu</i>
+                    <span class="hidden-xs">Menu</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-xs-8 col-sm-6">
+                <div class="header-logo text-center">
+                  <a href="index_member.html" to="/" class="logo-text">BOLYBI</a>
+                </div>
+              </div>
+              <div class="col-xs-2 col-sm-3">
+                <div class="header-cart pull-right">
+                  <div class="cart-wrapper">
+                    <a class="hidden-xs" href="cart_member.html">
+                      <span class="hidden-xs hidden-sm cart">$0.00</span>
+                      <span class="hidden-xs hidden-sm">Cart</span>
+                    </a>
+                    <div class="dropdown">
+                      <button id="myinfo" class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                        <a class="header-nav-link name tooltipped tooltipped-sw js-menu-target">
+                          <img alt="avatar" class="img-circle" src="./images/ly.jpg" height="40" width="40">
+                          <span class="caret"></span>
+                        </a>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" style="margin-right: 30px;">
+                        <li>
+                          <a href="cart_member.html">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+                          </a>
+                        </li>
+                        <li> 
+                          <a href="checkout_member.html">
+                            <i class="fa fa-credit-card" aria-hidden="true"></i> Check Out
+                          </a>
+                        </li>
+                        <li>
+                          <a href="profile_member.html">
+                            <i class="fa fa-user" aria-hidden="true"></i> My profile
+                          </a>
+                        </li>
+                        <li>
+                          <a href="index.html">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i> Log Out
+                          </a>
+                        </li>
+                      </ul>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content-area">
+        <section class="page-section height-100">
+          <div class="container-fluid">
+            <div class="col-md-12 relative min-height">
+              <div class="text-center about-header">
+                <h2 class="block-header" style="margin-top: 50px">Check Out</h2>
+              </div>
+              <div class="container">               
+                <form method="post" name="contactForm" class="contact-form" id="contact-form">
+                  <div class="col-sm-6">
+                    <h3>Information</h3>
+                    <div class="row">
+                    <div>
+                      <div class="form-group">
+                        <input type="text" name="fullname" class="form-control " placeholder="Name" maxLength="30" size="30" required="" tabIndex="1" value="Cao Ý Ly" disabled/>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="form-group">
+                        <input type="email" placeholder="Email" name="emailAddress" class="form-control" tabIndex="2" required="" value="caoyly@gmail.com" disabled/>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="form-group">
+                        <input type="phone" placeholder="Phone" name="phone" class="form-control" tabIndex="3" required=""/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div>
+                      <div class="form-group">
+                        <textarea placeholder="Address" name="address" class="form-control" tabIndex="4" cols="30" rows="2" required=""></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div>
+                      <div class="form-group">
+                        <textarea placeholder="Note" name="note" class="form-control" tabIndex="5" cols="50" rows="4"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5">
+                  <div>
+                    <h3>Cart</h3>
+                    <div>
+                      <div class="detailcheck">
+                        <img class="img-responsive" src="http://shop.picassostudio.io/assets/img/STEFAN-JANOSKI-MAX-PRM-807497_101_A_PREM_1.png"/>
+                        <div class="box">
+                          <p class="brand">Stephan janoski max<span> (Size 38)</span></p>
+                          <p class="price">$150.00</p>
+                        </div>
+                      </div>
+                      <div class="detailcheck" style="border-bottom: 1px solid black;">
+                        <img class="img-responsive" src="http://shop.picassostudio.io/assets/img/INTERNATIONALIST-KJCRD-M-QS-829344_006_A_PREM_1.png"/>
+                        <div class="box">
+                          <p class="brand">Internationalist kjcrd<span> (Size 37)</span></p>
+                          <p class="price">$40.00</p>
+                        </div>
+                      </div>             
+                    </div>
+                    <div id="pay">
+                      <span>Total:</span>
+                      <span class="price">$190.00</span>
+                    </div>
+                  </div>
+                  <div class="delivery">
+                    <h3>Delivery</h3>
+                    <p>Choose type of transfer
+                      <span>
+                        <select name="delivery">
+                          <option value="cod">COD</option>
+                          <option value="bank">Bank Transfer</option>
+                        </select>
+                      </span>
+                    </p>
+                    <div>
+                      <a href="shop_member.html"><u>Do you want to buy more?</u></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="row"><a href="confirm_member.html">
+                    <button class="btn-theme form-btn pull-right" type="submit">
+                      <span class="hidden-xs hidden-sm">Done</span>
+                      <span class="hidden-md hidden-lg">Done</span>
+                    </button></a>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="main-menu">
+        <div class="close-menu" onclick="hideMenu()">
+          <i class="material-icons">close</i>
+        </div>
+        <ul>
+          <li><a href="index_member.html">Home</a></li>
+          <li><a href="shop_member.html">Shop</a></li>
+          <li><a href="about_member.html" >About</a></li>
+          <li><a href="contact_member.html" class="active">Contact</a></li>
+        </ul>
+        <div class="social-media">
+          <a target="_blank" href="https://www.facebook.com/BOLYBIshop/">
+            <span><i class="fa fa-facebook"></i></span>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/bolybi.shoes/">
+            <span><i class="fa fa-instagram"></i></span>
+          </a>
+          <a target="_blank" href="https://plus.google.com/100006312170457538105">
+            <span><i class="fa fa-google-plus"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

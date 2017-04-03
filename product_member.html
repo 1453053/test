@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BOLYBI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/flexslider.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./css_member/info.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/icon.jpg" />
+  </head>
+  <body>
+    <div class="home">
+      <header class="header fixed">
+        <div class="header-wrapper top-bar">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-2 col-sm-3">
+                <div class="menu-icon pull-left">
+                  <a onclick="showMenu()">
+                    <i class="material-icons">menu</i>
+                    <span class="hidden-xs">Menu</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-xs-8 col-sm-6">
+                <div class="header-logo text-center">
+                  <a href="index_member.html" to="/" class="logo-text">BOLYBI</a>
+                </div>
+              </div>
+              <div class="col-xs-2 col-sm-3">
+                <div class="header-cart pull-right">
+                  <div class="cart-wrapper">
+                    <a class="hidden-xs" href="cart_member.html">
+                      <span class="hidden-xs hidden-sm cart">$0.00</span>
+                      <span class="hidden-xs hidden-sm">Cart</span>
+                    </a>
+                    <div class="dropdown">
+                      <button id="myinfo" class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                        <a class="header-nav-link name tooltipped tooltipped-sw js-menu-target">
+                          <img alt="avatar" class="img-circle" src="./images/ly.jpg" height="40" width="40">
+                          <span class="caret"></span>
+                        </a>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" style="margin-right: 30px;">
+                        <li>
+                          <a href="cart_member.html">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+                          </a>
+                        </li>
+                        <li> 
+                          <a href="checkout_member.html">
+                            <i class="fa fa-credit-card" aria-hidden="true"></i> Check Out
+                          </a>
+                        </li>
+                        <li>
+                          <a href="profile_member.html">
+                            <i class="fa fa-user" aria-hidden="true"></i> My profile
+                          </a>
+                        </li>
+                        <li>
+                          <a href="index.html">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i> Log Out
+                          </a>
+                        </li>
+                      </ul>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="content-area">
+        <section class="page-section full-height">
+          <div class="container-fluid full-height">
+            <div class="fake-white"></div>
+            <div class="row product-single">
+              <a href="shop.html">
+                <div class="all_products">
+                  <span class="glyphicon glyphicon-th"></span>
+                </div>
+              </a>
+              <div class="col-md-6 text-center relative min-height">
+                <div class="images-wrapper">
+                  <img alt="" class="imgdetail max-height" id="mainImg" src="http://shop.picassostudio.io/assets/img/STEFAN-JANOSKI-MAX-PRM-807497_101_A_PREM_1.png"/>
+                  <div class="row">
+                    <div class="hidden-xs col-sm-3"></div>
+                      <div class="col-xs-4 col-sm-2">
+                          <div class="img-product-detail">
+                              <a>
+                                  <img class="full-width thumbImg" alt="" src="http://shop.picassostudio.io/assets/img/STEFAN-JANOSKI-MAX-PRM-807497_101_A_PREM_1.png"/>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="col-xs-4 col-sm-2">
+                          <div class="img-product-detail">
+                              <a>
+                                  <img class="full-width thumbImg" alt="" src="http://shop.picassostudio.io/assets/img/STEFAN-JANOSKI-MAX-PRM-807497_101_D_PREM_2.png"/>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="col-xs-4 col-sm-2">
+                          <div class="img-product-detail">
+                              <a>
+                                  <img class="full-width thumbImg" alt="" src="http://shop.picassostudio.io/assets/img/STEFAN-JANOSKI-MAX-PRM-807497_101_E_PREM_3.png"/>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 filters-shop min-height">
+                <div class="product-name">
+                  <h2 class="product-title">Stephan Janoski Max</h2>
+                  <div class="product-price">$150.00</div>
+                </div>
+                <div class="wrapper-info">
+                  <div class="product-text">Designed with insights from a skateboarding legend, the Nike SB Stefan Janoski Max WoMen's Skateboarding Shoe provides excellent impact protection and a natural ride with a Max Air unit under the heel and deep flex grooves.</div>
+                  <div class="buttons relative">
+                    <div>
+                      <span class="select-wrapper-size">
+                        <select class="form-control size-select" name="size" >
+                          <option value="" disabled selected>Select size</option>
+                          <option value="36">36</option>
+                          <option value="37">37</option>
+                          <option value="38">38</option>
+                          <option value="39">39</option>
+                        </select>
+                      </span>
+                      <span class="input-group-btn text-center">
+                        <button class="btn-theme btn-detail" id="btn-cart">Add to cart</button>
+                        <div class="message fadein fadeout" id="err-mes"></div>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="main-menu">
+        <div class="close-menu" onclick="hideMenu()">
+          <i class="material-icons">close</i>
+        </div>
+        <ul>
+          <li><a href="index_member.html">Home</a></li>
+          <li><a href="shop_member.html">Shop</a></li>
+          <li><a href="about_member.html">About</a></li>
+          <li><a href="contact_member">Contact</a></li>
+        </ul>
+        <div class="social-media">
+          <a target="_blank" href="https://www.facebook.com/BOLYBIshop/">
+            <span><i class="fa fa-facebook"></i></span>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/bolybi.shoes/">
+            <span><i class="fa fa-instagram"></i></span>
+          </a>
+          <a target="_blank" href="https://plus.google.com/100006312170457538105">
+            <span><i class="fa fa-google-plus"></i></span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./js/menu.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        $('.thumbImg').click(function(){
+          var src = $(this).attr("src");
+          $('#mainImg').attr("src", src);
+        });
+        $('#btn-cart').click(function(){
+          $('#err-mes').html('Product was added to cart !!');
+        });
+      });
+    </script>
+  </body>
+</html>

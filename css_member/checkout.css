@@ -1,0 +1,72 @@
+@media(min-width: 1200px){
+	.container{
+		width: 970px;
+	}
+}
+.box{
+	position: relative;
+	box-sizing: border-box;
+	display: block;
+}
+.brand{
+	min-width: 150px;
+	float: left;
+}
+.price{
+float: right;
+}
+.form-group .form-control{
+	border: 1px solid black;
+	height: 40px;
+}
+.contact-form textarea{
+	height: 50px;
+}
+
+h3{
+	font-family: monospace;
+	letter-spacing: 0;
+	text-align: center;
+}
+
+#pay{
+	font-family: monospace;
+	letter-spacing: 0;
+	font-size: 20px;
+}
+
+#pay .price{
+	float: right;
+}
+
+.box{
+	font-family: monospace;
+	letter-spacing: 0;
+}
+
+.delivery{
+	font-family: monospace;
+	letter-spacing: 0;
+}
+
+.delivery select{
+	float: right;
+}
+
+.delivery a{
+	color: #000000;
+}
+
+.delivery p{
+	padding-bottom: 50px;
+}
+
+.col-sm-5 .img-responsive{
+	width: 30%;
+	height: 30%;
+	border: none;
+}
+
+.detailcheck{
+	float: left;
+}
